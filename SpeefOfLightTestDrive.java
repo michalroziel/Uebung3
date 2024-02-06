@@ -16,12 +16,16 @@ System.out.println(" The Speed of Light is as follows : " + SpeedOfLight.getSpee
 
     float factor =  myScan.nextFloat();
 
-    float result =  (float) myLight.multiplyByFactor(factor);
+    double result = myLight.multiplyByFactor(factor);
 
 
     System.out.println(" the chosen factor is : " + factor );
-    System.out.println( " the spped of Light multiplied by factor is : " + result);
-   myScan.close();
+    System.out.println( " the speed of Light multiplied by factor is : " + result);
+
+   myLight.printFraction(factor) ;
+
+
+    myScan.close();
 
     }
 

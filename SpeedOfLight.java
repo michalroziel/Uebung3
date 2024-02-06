@@ -1,3 +1,5 @@
+import java.text.DecimalFormat;
+
 public class SpeedOfLight {
    
 private static final long  SPEED_OF_LIGHT = 299792458L; // in m/s.
@@ -15,7 +17,29 @@ public double multiplyByFactor(double factor){
 
 }
 
-/* public double printFraction(double ) */
+
+
+
+
+
+ public double printFraction(double factor  ) {
+
+
+    double result = multiplyByFactor(factor);
+
+
+    DecimalFormat format = new DecimalFormat("#,###.##");
+
+    String  strNum =  format.format(result);
+    
+    System.out.println(" the formatted speed is : " + strNum);
+
+
+        return result; 
+
+
+
+ }
 
 
 
