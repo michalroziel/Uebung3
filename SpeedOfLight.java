@@ -19,9 +19,6 @@ public double multiplyByFactor(double factor){
 
 
 
-
-
-
  public double printFraction(double factor  ) {
 
 
